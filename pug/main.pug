@@ -1,0 +1,22 @@
+block activeLink
+  -linkActive = 'home'
+
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block titlePage
+      title Document
+    block cssFiles
+      link(href="css/all.min.css", rel="stylesheet")
+    
+    //- Google Fonts
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,500&display=swap")
+  body
+    block content
+
+
+    block jsFiles
+      script(src="js/all.min.js")

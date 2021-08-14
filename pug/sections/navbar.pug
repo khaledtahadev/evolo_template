@@ -1,0 +1,27 @@
+nav.navbar.navbar-expand-md.navbar-light.bg-white.fixed-top.shadow-sm.navCustomizeLg
+  .container
+    a(href="#").navbar-brand
+      img(src="images/logo.svg", alt="img",height='32')
+    button.navbar-toggler(data-target='#navContent', data-toggle='collapse')
+      i.fa.fa-bars
+    .navbar-collapse.collapse#navContent
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a(href="#").nav-link Home
+        li.nav-item
+          a(href="#").nav-link Service
+        li.nav-item
+          a(href="#").nav-link Pricing
+        li.nav-item.dropdown
+          a(href="#", data-toggle='dropdown').nav-link.dropdown-toggle About
+          .dropdown-menu.border-0
+            a(href="#").dropdown-item Terms Conditions
+            .dropdown-divider
+            a(href="#").dropdown-item Privacy Policy
+        li.nav-item
+          a(href="#").nav-link Contact
+      .nav
+        a(href="#").fa.fa-facebook
+        a(href="#").fa.fa-twitter
+
+

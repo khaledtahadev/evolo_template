@@ -1,0 +1,27 @@
+form(novalidate).needs-validation
+        .form-group.position-relative
+          input(id='name', type="text", name="name", required).form-control
+          label(for='name') Full Name
+          .invalid-feedback Please choose a unique and valid username.
+        .form-group.position-relative
+          input(id='email', type="email", name="email", required).form-control
+          label(for="email") Email
+          .invalid-feedback Enter Currect Email
+        .form-group.position-relative
+          input(id='phone', type="text", name="phone", required).form-control
+          label(for="phone") Phone
+          .invalid-feedback Enter right phone Number
+        .form-group
+          select(name="interested", required).form-control
+            option(disabled selected) Interested In..
+            option(value="Starter") Starter
+            option(value="Starter") Medium
+            option(value="Starter") Complete
+        .form-group
+          input(id='check-id', type="checkbox", name="agree", required)
+          label(for="check-id") I agree with Evolo's stated 
+            a(href="#") Privacy Policy. 
+            | and 
+            a(href="#") Terms & Conditions
+          .invalid-feedback Check Choice
+        button(type="submit").btn.btn-primary.customBtn.rounded-pill Request
